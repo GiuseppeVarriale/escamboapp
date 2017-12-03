@@ -14,12 +14,15 @@ gem 'rails-i18n'
 gem 'foreman'
 #Rails gem of the Bootstrap based admin theme SB Admin 2. http://dreamingechoes.github.io/bootstrap_sb_admin_base_v2
 gem 'bootstrap_sb_admin_base_v2'
-#The most popular front-end framework for developing responsive, mobile first projects on the web.
-gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
-#A simple, versatile notification library
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
-#A library for generating fake data such as names, addresses, and phone numbers.
-gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
+source 'https://rails-assets.org' do
+  #The most popular front-end framework for developing responsive, mobile first projects on the web.
+  gem 'rails-assets-bootstrap', '3.3.7'
+  #A0 simple, versatile notification library
+  gem 'rails-assets-notifyjs'
+  #BootBoxJS
+  gem 'rails-assets-bootbox'
+end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -63,6 +66,8 @@ gem "rails-erd"
 end
 
 group :development do
+  #A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
