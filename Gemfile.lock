@@ -79,6 +79,8 @@ GEM
     devise-i18n (1.4.0)
       devise (>= 3.1)
     dotenv (0.7.0)
+    enum_help (0.0.17)
+      activesupport (>= 3.0.0)
     erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -112,6 +114,8 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
+    pundit (1.1.0)
+      activesupport (>= 3.0.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -216,10 +220,12 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   devise-i18n
+  enum_help
   faker!
   foreman
   jbuilder (~> 2.0)
   jquery-rails
+  pundit
   rails (= 4.2.5)
   rails-assets-bootbox!
   rails-assets-bootstrap (= 3.3.7)!
